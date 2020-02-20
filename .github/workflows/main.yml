@@ -59,7 +59,8 @@ jobs:
         run: |
           IMAGE_ID=$IMAGE_NAME
 
-          TAG=$IMAGE_ID:latest
+          VERSION=latest
+          TAG=$IMAGE_ID:$VERSION
           
           echo IMAGE_ID=$IMAGE_ID
           echo VERSION=$VERSION
