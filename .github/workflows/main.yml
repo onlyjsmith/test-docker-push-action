@@ -55,3 +55,16 @@ jobs:
           docker tag image $TAG
           docker push $TAG
 
+      - name: Push image to latest version
+        run: |
+          IMAGE_ID=$IMAGE_NAME
+
+          TAG=$IMAGE_ID:latest
+          
+          echo IMAGE_ID=$IMAGE_ID
+          echo VERSION=$VERSION
+          echo TAG=$TAG
+
+          docker tag image $TAG
+          docker push $TAG
+
